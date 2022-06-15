@@ -2343,6 +2343,9 @@ textarea.form-control {
   header nav {
     display: none;
   }
+  #hamburger-icon {
+    display: block;
+  }
 }
 
 /* cart-popup */
