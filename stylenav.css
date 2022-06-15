@@ -18,7 +18,7 @@ header a {
 header {
     padding: 0;
     background-color: white;
-    height: 100px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -45,3 +45,102 @@ ul li {
     margin-left: 10px;
 
 }
+footer {
+    padding-top: 120px;
+    padding-bottom: 70px;
+    background-color: #1b1a1a;
+  }
+  
+  .footer .footer-widget {
+    margin-bottom: 35px;
+  }
+  
+  .footer .footer-widget__title {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 19px;
+  }
+  
+  .footer .footer-newsletter {
+    margin-bottom: 65px;
+  }
+  
+  .footer .footer-newsletter__title span {
+    color: #ffffff;
+    font-size: 23px;
+    display: block;
+    margin-bottom: 13px;
+  }
+  
+  .footer .footer-newsletter__title a {
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  .footer .footer-newsletter__title a:hover {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .footer .footer-newsletter__form {
+    position: relative;
+  }
+  
+  .footer .footer-newsletter__form .form-control {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding-left: 20px;
+  }
+  
+  .footer .footer-newsletter__form .form-control:focus {
+    background-color: transparent;
+    border-color: #f9f9f9;
+  }
+  
+  .footer .footer-newsletter__form .form-control::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  
+  .footer .footer-newsletter__form .form-control:-moz-placeholder {
+    color: #ffffff;
+  }
+  
+  .footer .footer-newsletter__form .form-control::-moz-placeholder {
+    color: #ffffff;
+  }
+  
+  .footer .footer-newsletter__form .form-control:-ms-input-placeholder {
+    color: #ffffff;
+  }
+  
+  .footer .footer-newsletter__form .submit-btn {
+    width: 55px;
+    height: 55px;
+    line-height: 53px;
+    margin-left: -2px;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  
+  .footer .footer-newsletter__form .submit-btn:hover {
+    color: #1b1a1a;
+    background-color: #ffffff;
+  }
+  
+  .footer .social-icons li a {
+    color: #ffffff;
+  }
+  
+  .footer .social-icons li a:hover {
+    opacity: .6;
+  }
+  
+  .footer .footer-copyright a {
+    color: rgba(249, 249, 249, 0.8);
+  }
+  
