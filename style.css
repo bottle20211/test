@@ -2239,19 +2239,7 @@ textarea.form-control {
   color: #1b1a1a;
 }
 
-.cart__counter {
-  position: absolute;
-  top: -10px;
-  right: -9px;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #1b1a1a;
-  color: #ffffff;
-  font-size: 12px;
-}
+
 /*hamburger-menu*/
 #hamburger-icon {
   margin: auto 0;
