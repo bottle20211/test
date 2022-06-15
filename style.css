@@ -2304,7 +2304,7 @@ textarea.form-control {
 /*hamburger-menu*/
 #hamburger-icon {
   margin: auto 0;
-  display: block;
+  display: none;
   cursor: pointer;
 }
 #hamburger-icon div {
@@ -2332,14 +2332,14 @@ textarea.form-control {
   justify-content: flex-start;
 }
 .mobile-menu {
-  display: block;
+  display: none;
   position: absolute;
   top: 50px;
   left: 0;
   height: calc(100vh - 50px);
   width: 100%
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   header nav {
     display: none;
   }
