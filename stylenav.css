@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: blanchedalmond;
+    background-color: white;
     color: black;
     font-family: "Heebo", sans-serif;
 }
@@ -16,9 +16,9 @@ header a {
     text-decoration: none;
 }
 header {
-    padding: 0 20px;
+    padding: 0;
     background-color: white;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -30,6 +30,18 @@ header {
     color: green;
 
 }
-ul{
-    
+ul {
+list-style: none;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+ul a {
+color: green;
+}
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+
 }
