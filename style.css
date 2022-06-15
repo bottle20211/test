@@ -2304,7 +2304,7 @@ textarea.form-control {
 /*hamburger-menu*/
 #hamburger-icon {
   margin: auto 0;
-  display:none;
+  display: none;
   cursor: pointer;
 }
 #hamburger-icon div {
