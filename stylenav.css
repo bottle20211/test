@@ -15,7 +15,8 @@ body {
 header a {
     text-decoration: none;
 }
-header {
+header 
+{
     padding: 0;
     background-color: white;
     height: 60px;
@@ -44,6 +45,11 @@ ul li {
     padding: 5px;
     margin-left: 10px;
 
+}
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+    
 }
 footer {
     padding-top: 120px;
