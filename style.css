@@ -2304,7 +2304,7 @@ textarea.form-control {
 /*hamburger-menu*/
 #hamburger-icon {
   margin: auto 0;
-  display: none;
+  display: block;
   cursor: pointer;
 }
 #hamburger-icon div {
@@ -2332,7 +2332,7 @@ textarea.form-control {
   justify-content: flex-start;
 }
 .mobile-menu {
-  display: none;
+  display: block;
   position: absolute;
   top: 50px;
   left: 0;
