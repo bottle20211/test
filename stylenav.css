@@ -1,0 +1,24 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;family=Work+Sans:wght@400;600;700&amp;display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+    color: black;
+    font-family: "Heebo", sans-serif;
+}
+header a {
+    text-decoration: none;
+}
+header {
+    padding: 0 20px;
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
