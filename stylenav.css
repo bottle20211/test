@@ -22,3 +22,14 @@ header {
     display: flex;
     justify-content: space-between;
 }
+#brand {
+    display: flex;
+    align-items: center;
+}
+#brand a {
+    color: green;
+
+}
+ul{
+    
+}
