@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;family=Work+Sans:wght@400;600;700&amp;display=swap');
 
-.container{
-    max-width: 700px;
-    width: 100%;
-    background: #fff;
-}
+
 .container .title{
 position: relative ;
 font-size: 25px;
