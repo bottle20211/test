@@ -41,7 +41,7 @@ font-weight: 500
 
 form .user-details .input-box{
  
-    width: calc(100% / 2 - 20px);
+    width: calc(100%  - 20px);
 }
 .user-details .input-box .details{
     display: block;
