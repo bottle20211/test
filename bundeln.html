@@ -196,9 +196,11 @@
                     <span class="order">Bündel 3</span>
                     </label>
                   </div>
-                </div> <a href ="https://bottle20211.github.io/test/einzahlung">
+                </div> 
+                <!--<a href ="https://bottle20211.github.io/test/einzahlung">
                 <div class="button"><input type="button"  value="Forthfahren" />
-                </div>
+                </div> -->
+                <button onclick="myFunction()">Fortfahren</button>
                 </a>
               </form>
             </div>
@@ -254,16 +256,31 @@
           <button id="scrollTopBtn" class="actived"><i class="fas fa-long-arrow-alt-up"></i></button>
       
               <script>
+                function myFunction (){
                 var d1 = document.getElementById("dot-1").checked; 
 
               if (d1 == true) {
                   
                  
-                   window.location = "https://bottle20211.github.io/test/einzahlung1";
+                   window.location.href = "https://bottle20211.github.io/test/einzahlung1";
+} var d2 = document.getElementById("dot-2").checked; 
+
+if (d2 == true) {
+    
+   
+     window.location.href = "https://bottle20211.github.io/test/einzahlung2";
 }
+var d3 = document.getElementById("dot-1").checked; 
+
+if (d3 == true) {
+    
+   
+     window.location.href = "https://bottle20211.github.io/test/einzahlung3";
+}
+                }
               </script>
           
-      </body></html>
+      
         </body>
         </html>
         
