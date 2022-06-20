@@ -18,6 +18,7 @@ font-weight: 500
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0 12px 0;
+    font-size: 18px;
 }
 
 form .user-details .input-box{
@@ -35,7 +36,7 @@ form .user-details .input-box{
     border-radius: 5px;
     border: 1px solid #ccc;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 20px;
    border-bottom-width: 2px;
    transition: all 0.3s ease;
  
