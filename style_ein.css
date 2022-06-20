@@ -30,7 +30,7 @@ form .user-details .input-box{
     font-weight: 500;
     margin-bottom: 5px;
 }
-.user-details .input-box .bank {
+.user-details .input-box  {
     height: 45px;
     outline: none;
     border-radius: 5px;
@@ -45,9 +45,9 @@ form .user-details .input-box{
   
 }
 
-.user-details .input-box .bank:focus,
+.user-details .input-box :focus,
 
-.user-details .input-box .bank:valid{
+.user-details .input-box :valid{
     border-color: green;
 
 }
