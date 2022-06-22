@@ -143,34 +143,36 @@
     <div class="container"></div>
            
             <div class="content">
-              <form name="my-form" method="post" action="https://script.google.com/macros/s/AKfycbyHxdiTOOR5AVlS5ZsxcUuih1WuQohDrx8qTn0pzuvaAo0wakZe2gPoJLoOdhsDJT0lbA/exec">
+              <form action="#">
                 <div class="user-details">
                   <div class="input-box">
-                    <input type="text" name="Vorname" placeholder="Vorname" required>
+                    <span class="details">Vorname</span>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
-                    
-                    <input type="text" name="Nachname" placeholder="Nachname" required>
+                    <span class="details">Nachname</span>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
-                    <input type="email" name="Email" placeholder="Email" required>
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="" required>
                   </div>
                  
                   <div class="input-box">
-                    
-                    <input type="text" name="Telefonnummer" placeholder="Telefonnummer" required>
+                    <span class="details">Telefonnummer</span>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
-                 
-                    <input type="text" name="Addresse" placeholder="Addresse" required>
+                    <span class="details">Addresse</span>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
-                  
-                    <input type="text" name="Stadt" placeholder="Stadt" required>
+                    <span class="details">Stadt</span>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
-                   
-                    <input type="text" name="Postleitzahl" placeholder="Postleitzahl" required>
+                    <span class="details">Postleitzahl</span>
+                    <input type="text" placeholder="" required>
                   </div>
                   
                   
@@ -198,7 +200,7 @@
                 <!--<a href ="https://bottle20211.github.io/test/einzahlung">
                 <div class="button"><input type="button"  value="Forthfahren" />
                 </div> -->
-                <div class="button"> <input type="submit" id="b" onclick="myFunction()" value="Fortfahren"/></div>
+                <div class="button"> <input type="button" id="b" onclick="myFunction()" value="Fortfahren"/></div>
                 </a>
               </form>
             </div>
@@ -256,8 +258,26 @@
       
               <script>
                 function myFunction (){
-                 
+                var d1 = document.getElementById("dot-1").checked; 
 
+              if (d1 == true) {
+                  
+                 
+                   window.location.href = "https://bottle20211.github.io/test/einzahlung1";
+} var d2 = document.getElementById("dot-2").checked; 
+
+if (d2 == true) {
+    
+   
+     window.location.href = "https://bottle20211.github.io/test/einzahlung2";
+}
+var d3 = document.getElementById("dot-3").checked; 
+
+if (d3 == true) {
+    
+   
+     window.location.href = "https://bottle20211.github.io/test/einzahlung3";
+}
                 }
               </script>
           
