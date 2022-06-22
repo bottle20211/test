@@ -143,63 +143,44 @@
     <div class="container"></div>
            
             <div class="content">
-              <form action="#" >
+              <form method="POST" action="https://script.google.com/macros/s/AKfycbxfeCre479x1dnRighEkmCfkKYWwDpO2ntMg5N5EBY1c0qDfvKQPM28FtCOsEa5zeBnqg/exec">
                 <div class="user-details">
                   <div class="input-box">
                     <span class="details">Vorname</span>
-                    <fieldset>
-                    <input type="text" name="entry.1094381503" id="Vorname" placeholder="" required>
-                  </fieldset>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Nachname</span>
-                    <fieldset>
-                    <input type="text" name="entry.638252421" id="Nachname" placeholder="" required>
-                  </fieldset>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Email</span>
-                    <fieldset>
-                    <input type="text" name="entry.2123284907" id="Email" placeholder="" required>
-                  </fieldset>
+                    <input type="text" placeholder="" required>
                   </div>
                  
                   <div class="input-box">
                     <span class="details">Telefonnummer</span>
-                    <fieldset>
-                    <input type="text" name="entry.1908904739" id="Telefonnummer" placeholder="" required>
-                  
-                  </fieldset>
-                </div>
+                    <input type="text" placeholder="" required>
+                  </div>
                   <div class="input-box">
                     <span class="details">Addresse</span>
-                    <fieldset>
-                    <input type="text" name="entry.1042113219" id="Addresse" placeholder="" required>
-                  </fieldset>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Stadt</span>
-                    <fieldset>
-                    <input type="text" name="entry.1899619283" id="Stadt" placeholder="" required>
-                  </fieldset>
+                    <input type="text" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Postleitzahl</span>
-                    <fieldset>
-                    <input type="text" name="entry.565966575" id="Postleitzahl" placeholder="" required>
-                  </fieldset>
+                    <input type="text" placeholder="" required>
                   </div>
                   
                   
                 </div>
                 <div class="order-details">
-         
-                  <input type="radio" name="entry.938893231" id="dot-1">
-               
-                  <input type="radio" name="entry.1730514484" id="dot-2">
-              
-                  <input type="radio" name="entry.40691790" id="dot-3">
-           
+                  <input type="radio" name="order" id="dot-1">
+                  <input type="radio" name="order" id="dot-2">
+                  <input type="radio" name="order" id="dot-3">
                   <span class="order-title">Bitte wählen Sie aus die Bündel</span>
                   <div class="category">
                     <label for="dot-1">
@@ -219,7 +200,7 @@
                 <!--<a href ="https://bottle20211.github.io/test/einzahlung">
                 <div class="button"><input type="button"  value="Forthfahren" />
                 </div> -->
-                <div class="button"> <input type="button" id="b"  onclick="return postToGoogle();"  value="Fortfahren"/></div>
+                <div class="button"> <input type="submit" id="b" onclick="myFunction()" value="Fortfahren"/></div>
                 </a>
               </form>
             </div>
@@ -276,47 +257,30 @@
           <button id="scrollTopBtn" class="actived"><i class="fas fa-long-arrow-alt-up"></i></button>
       
               <script>
-                function postToGoogle() {
-                  var field1 = $("#Vorname").val();
-      var field2 = $("#Nachname").val();
-      var field3 = $("#Email").val();
-      var field4 = $("#Telefonnummer").val();
-      var field5 = $("#Addresse").val();
-      var field6 = $("#Stadt").val();
-      var field7 = $("#Postleitzahl").val();
-      var field8 = $("#dot-1").val();
-      var field9 = $("#dot-2").val();
-      var field10 = $("#dot-3").val();
+                function myFunction (){
+                var d1 = document.getElementById("dot-1").checked; 
 
-      $.ajax({
-        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkjo8D7ZunpircoNazJK5tGJ8X6RMDNCmnIUnVtdc7Bwjtrg/formResponse",
-        data: {
-          "entry.1094381503": field1,
-          "entry.638252421": field2,
-          "entry.2123284907": field3,
-          "entry.1908904739": field4,
-          "entry.1042113219": field5,
-          "entry.1899619283": field6,
-          "entry.565966575": field7,
-          "entry.938893231": field8,
-          "entry.1730514484": field9,
-          "entry.40691790": field10
-        },
-        type: "POST",
-        dataType: "xml",
-        success: function (d) {
-          $('#contact').trigger('reset');
-        },
-        error: function (x, y, z) {
-          $('#contact').trigger('reset');
-        }
-      });
-      return false;
+              if (d1 == true) {
+                  
+                 
+                   window.location.href = "https://bottle20211.github.io/test/einzahlung1";
+} var d2 = document.getElementById("dot-2").checked; 
+
+if (d2 == true) {
+    
+   
+     window.location.href = "https://bottle20211.github.io/test/einzahlung2";
+}
+var d3 = document.getElementById("dot-3").checked; 
+
+if (d3 == true) {
+    
+   
+     window.location.href = "https://bottle20211.github.io/test/einzahlung3";
+}
                 }
-
               </script>
           
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       
         </body>
         </html>
