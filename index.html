@@ -14,6 +14,7 @@
   <link rel="stylesheet"  type="text/css" href="https://bottle20211.github.io/test/css2.css">
   <link rel="stylesheet" type="text/css" href="https://bottle20211.github.io/test/all.css">
   <link rel="stylesheet" type="text/css" href="https://bottle20211.github.io/test/style3.css">
+ 
   
  
 </head>
@@ -294,22 +295,29 @@
             <p class="heading-desc mb-30">Kontaktiere uns via Kontaktformular, Telefon oder E-Mail. <br>Gerne sind wir für Sie da.</p>
           </div><!-- /.col-lg-6 -->
           <div class="col-sm-12 col-md-12 col-lg-6">
-            <form method="post" action="https://bottle20211.github.io/test/index" id="contactForm" novalidate="novalidate">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Vorname und Nachname" id="contact-name" name="contact-name" required="" aria-required="true">
-                <span class="focus-border"></span>
+            <form method="post" id="my-form" action="https://script.google.com/macros/s/AKfycbw3YOW6W7oM2ZghJwPDSOD-b9O1r0c6_B7bK6O8na-uy-09afktUrGw1yP8VrOSI7FZzA/exec">
+               
+              <div class="input-box">
+                <span class="details">Vorname</span>
+                <input type="text" name="Vorname" placeholder="" required>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email" id="contact-email" name="contact-email" required="" aria-required="true">
-                <span class="focus-border"></span>
+              <div class="input-box">
+                <span class="details">Nachname</span>
+                <input type="text" name="Nachname" placeholder="" required>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" placeholder="Nachricht" id="contact-messgae" name="contact-messgae" required="" aria-required="true"></textarea>
-                <span class="focus-border"></span>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" name="Email" placeholder="" required>
               </div>
-              <button type="submit" class="btn btn__primary">Senden</button>
-              <div class="contact-result"></div>
-            </form>
+             
+              <div class="input-box">
+                <span class="details">Nachricht</span>
+              <div class="input-box">
+                <input type="text"  name="Telefonnummer" placeholder="" required>
+              </div>
+            <div class="button"> <input type="submit" name="b" id="b" value="Fortfahren"/>  </div>
+            </a>
+          </form>
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -366,6 +374,27 @@
     </footer><!-- /.Footer -->
     <button id="scrollTopBtn" class="actived"><i class="fas fa-long-arrow-alt-up"></i></button>
 
+    <script>
+      window.addEventListener("load", function() {
+const form = document.getElementById('my-form');
+form.addEventListener("submit", function(e) {
+e.preventDefault();
+const data = new FormData(form);
+const action = e.target.action;
+fetch(action, {
+method: 'POST',
+body: data,
+})
+.then(() => {
+    
+
+window.location.href = "https://bottle20211.github.io/t/index";
+          
+})
+});
+});
+
+      </script>
 
         
     

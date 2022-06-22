@@ -143,66 +143,66 @@
     <div class="container"></div>
            
             <div class="content">
-              <form action="#">
-                <div class="user-details">
-                  <div class="input-box">
-                    <span class="details">Vorname</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Nachname</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                 
-                  <div class="input-box">
-                    <span class="details">Telefonnummer</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Addresse</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Stadt</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Postleitzahl</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  
-                  
+              <form method="post" id="my-form" action="https://script.google.com/macros/s/AKfycbw3YOW6W7oM2ZghJwPDSOD-b9O1r0c6_B7bK6O8na-uy-09afktUrGw1yP8VrOSI7FZzA/exec">
+               
+                <div class="input-box">
+                  <span class="details">Vorname</span>
+                  <input type="text" name="Vorname" placeholder="" required>
                 </div>
-                <div class="order-details">
-                  <input type="radio" name="order" id="dot-1">
-                  <input type="radio" name="order" id="dot-2">
-                  <input type="radio" name="order" id="dot-3">
-                  <span class="order-title">Bitte wählen Sie aus die Bündel</span>
-                  <div class="category">
-                    <label for="dot-1">
-                    <span class="dot one"></span>
-                    <span class="order"><b>Bündel 1</b></span>
+                <div class="input-box">
+                  <span class="details">Nachname</span>
+                  <input type="text" name="Nachname" placeholder="" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" name="Email" placeholder="" required>
+                </div>
+               
+                <div class="input-box">
+                  <span class="details">Telefonnummer</span>
+                <div class="input-box">
+                  <input type="text"  name="Telefonnummer" placeholder="" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Addresse</span>
+                  <input type="text" name="Addresse" placeholder="" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Stadt</span>
+                  <input type="text"  name="Stadt" placeholder="" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Postleitzahl</span>
+                  <input type="text"  name="Postleitzahl" placeholder="" required>
+                </div>
+                
+
+              <div class="order-details">
+                <input type="radio" name="order" id="dot-1">
+                <input type="radio" name="order" id="dot-2">
+                <input type="radio" name="order" id="dot-3">
+                <span class="order-title">Bitte wählen Sie aus die Bündel</span>
+                <div class="category">
+                  <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="order"><b>Bündel 1</b></span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="order"><b>Bündel 2</b></span>
+                </label>
+                <label for="dot-3">
+                  <span class="dot three"></span>
+                  <span class="order"><b>Bündel 3</b></span>
                   </label>
-                  <label for="dot-2">
-                    <span class="dot two"></span>
-                    <span class="order"><b>Bündel 2</b></span>
-                  </label>
-                  <label for="dot-3">
-                    <span class="dot three"></span>
-                    <span class="order"><b>Bündel 3</b></span>
-                    </label>
-                  </div>
-                </div> 
-                <!--<a href ="https://bottle20211.github.io/test/einzahlung">
-                <div class="button"><input type="button"  value="Forthfahren" />
-                </div> -->
-                <div class="button"> <input type="button" id="b" onclick="myFunction()" value="Fortfahren"/></div>
-                </a>
-              </form>
+                </div>
+              </div> 
+              <!--<a href ="https://bottle20211.github.io/test/einzahlung">
+              <div class="button"><input type="button"  value="Forthfahren" />
+              </div> -->
+              <div class="button"> <input type="submit" name="b" id="b" value="Fortfahren"/>  </div>
+              </a>
+            </form>
             </div>
           </div>
          
@@ -256,30 +256,28 @@
           </footer><!-- /.Footer -->
           <button id="scrollTopBtn" class="actived"><i class="fas fa-long-arrow-alt-up"></i></button>
       
-              <script>
-                function myFunction (){
-                var d1 = document.getElementById("dot-1").checked; 
-
-              if (d1 == true) {
-                  
-                 
-                   window.location.href = "https://bottle20211.github.io/test/einzahlung1";
-} var d2 = document.getElementById("dot-2").checked; 
-
-if (d2 == true) {
-    
-   
-     window.location.href = "https://bottle20211.github.io/test/einzahlung2";
-}
-var d3 = document.getElementById("dot-3").checked; 
-
-if (d3 == true) {
-    
-   
-     window.location.href = "https://bottle20211.github.io/test/einzahlung3";
-}
-                }
-              </script>
+              <<script>
+                window.addEventListener("load", function() {
+          const form = document.getElementById('my-form');
+          form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+          method: 'POST',
+          body: data,
+          })
+          .then(() => {
+              
+          
+          window.location.href = "https://bottle20211.github.io/t/index";
+                    
+          })
+          });
+          });
+          
+                </script>
+          
           
       
         </body>
