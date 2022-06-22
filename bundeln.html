@@ -200,7 +200,7 @@
                 <!--<a href ="https://bottle20211.github.io/test/einzahlung">
                 <div class="button"><input type="button"  value="Forthfahren" />
                 </div> -->
-                <div class="button"> <input type="button" id="b" onclick="myFunction()" value="Fortfahren"/></div>
+                <div class="button"> <input type="button" id="b"  onsubmit="return postToGoogle();" value="Fortfahren"/></div>
                 </a>
               </form>
             </div>
@@ -257,7 +257,7 @@
           <button id="scrollTopBtn" class="actived"><i class="fas fa-long-arrow-alt-up"></i></button>
       
               <script>
-                function myFunction (){
+                function  postToGoogle(){
                   var field1 = $("#Vorname").val();
       var field2 = $("#Nachname").val();
       var field3 = $("#Email").val();
@@ -308,6 +308,7 @@ if (d3 == true) {
      window.location.href = "https://bottle20211.github.io/test/einzahlung3";
 }
                 }
+
               </script>
           
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
