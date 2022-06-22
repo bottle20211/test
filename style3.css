@@ -17,7 +17,7 @@
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.content form .my-form{
+.content form .my-forma{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -26,18 +26,18 @@
   font-weight: bolder;
 
 }
-form .my-form .input-box{
+form .my-forma .input-box{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
   font-size: 16;
 }
-form .my-form span.details{
+form .my-forma span.details{
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
   font-size: 16;
 }
-.my-form .input-box input{
+.my-forma .input-box input{
   height: 45px;
   width: 100%;
   outline: none;
@@ -48,8 +48,8 @@ form .my-form span.details{
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
-.my-form .input-box input:focus,
-.my-form .input-box input:valid{
+.my-forma .input-box input:focus,
+.my-forma .input-box input:valid{
   border-color: green;
   font-size: 16;
 }
