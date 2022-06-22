@@ -17,67 +17,63 @@
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.content #my-form{
+.content form .my-form{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0 12px 0;
-  font-size: 20;
+  font-size: 16;
   font-weight: bolder;
 
 }
- #my-form .input-box{
+form .my-form .input-box{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
-  font-size: 20;
+  font-size: 16;
 }
-#my-form .input-box span.details{
+form .my-form span.details{
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
-  font-size: 20;
-  color: green;
+  font-size: 16;
 }
-#my-form .input-box input{
+.my-form .input-box input{
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
-#my-form .input-box input:focus,
-#my-form .input-box input:valid{
+.my-form .input-box input:focus,
+.my-form .input-box input:valid{
   border-color: green;
-  font-size: 20;
+  font-size: 16;
 }
  form .order-details .order-title{
   font-size: 20px;
   font-weight: 500;
-  color: green;
  }
  form .category{
    display: flex;
    width: 80%;
    margin: 14px 0 ;
    justify-content: space-between;
-   font-size: 20;
+   font-size: 16;
  }
  form .category label{
    display: flex;
    align-items: center;
    cursor: pointer;
-   font-size: 20;
-   color: green;
+   font-size: 16;
  }
  form .category label .dot{
   height: 18px;
   width: 18px;
-  font-size: 20px;
-  color: green;
+  font-size: 16px;
   border-radius: 50%;
   margin-right: 10px;
   background: #d9d9d9;
@@ -89,25 +85,23 @@
  #dot-3:checked ~ .category label .three{
    background: green;
    border-color: #d9d9d9;
-   font-size: 20;
-  
+   font-size: 16;
  }
  form input[type="radio"]{
    display: none;
-   font-size: 20;
-   color: green;
+   font-size: 16;
  }
  #b{
    height: 45px;
    margin: 35px 0
  }
-#b input{
+ #b input{
    height: 100%;
    width: 100%;
    border-radius: 5px;
    border: none;
    color: #fff;
-   font-size: 20px;
+   font-size: 18px;
    font-weight: 500;
    letter-spacing: 1px;
    cursor: pointer;
@@ -122,18 +116,18 @@
  .container{
   max-width: 100%;
 }
-form #my-form .input-box{
+form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
   }
   form .category{
     width: 100%;
   }
-  .content form #my-form{
+  .content form .user-details{
     max-height: 300px;
     overflow-y: scroll;
   }
-  #my-form::-webkit-scrollbar{
+  .user-details::-webkit-scrollbar{
     width: 5px;
   }
   }
