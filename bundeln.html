@@ -147,32 +147,32 @@
                 <div class="user-details">
                   <div class="input-box">
                     <span class="details">Vorname</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" name="entry.1094381503" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Nachname</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" name="entry.638252421" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" name="entry.2123284907" placeholder="" required>
                   </div>
                  
                   <div class="input-box">
                     <span class="details">Telefonnummer</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" name="entry.1908904739" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Addresse</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" name="entry.1042113219" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Stadt</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" name="entry.1899619283" placeholder="" required>
                   </div>
                   <div class="input-box">
                     <span class="details">Postleitzahl</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" name="entry.565966575" placeholder="" required>
                   </div>
                   
                   
@@ -258,6 +258,35 @@
       
               <script>
                 function myFunction (){
+                  var field1 = $("#Vorname").val();
+      var field2 = $("#Nachname").val();
+      var field3 = $("#Email").val();
+      var field4 = $("#Telefonnummer").val();
+      var field5 = $("#Addresse").val();
+      var field6 = $("#Stadt").val();
+      var field7 = $("#Postleitzahl").val();
+
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkjo8D7ZunpircoNazJK5tGJ8X6RMDNCmnIUnVtdc7Bwjtrg/formResponse",
+        data: {
+          "entry.1094381503": field1,
+          "entry.638252421": field2,
+          "entry.2123284907": field3,
+          "entry.1908904739": field4,
+          "entry.1042113219": field5,
+          "entry.1899619283": field6,
+          "entry.565966575": field7
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#contact').trigger('reset');
+        },
+        error: function (x, y, z) {
+          $('#contact').trigger('reset');
+        }
+      });
+      return false;
                 var d1 = document.getElementById("dot-1").checked; 
 
               if (d1 == true) {
@@ -281,6 +310,7 @@ if (d3 == true) {
                 }
               </script>
           
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       
         </body>
         </html>
