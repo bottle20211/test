@@ -178,9 +178,10 @@
                   
                 </div>
                 <div class="order-details">
-                  <input type="radio" name="order" id="dot-1">
-                  <input type="radio" name="order" id="dot-2">
-                  <input type="radio" name="order" id="dot-3">
+          "entry.938893231": field8,
+                  <input type="radio" name="entry.938893231" id="dot-1">
+                  <input type="radio" name="entry.1730514484" id="dot-2">
+                  <input type="radio" name="entry.40691790" id="dot-3">
                   <span class="order-title">Bitte wählen Sie aus die Bündel</span>
                   <div class="category">
                     <label for="dot-1">
@@ -265,6 +266,9 @@
       var field5 = $("#Addresse").val();
       var field6 = $("#Stadt").val();
       var field7 = $("#Postleitzahl").val();
+      var field8 = $("#dot-1").val();
+      var field9 = $("#dot-2").val();
+      var field10 = $("#dot-3").val();
 
       $.ajax({
         url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkjo8D7ZunpircoNazJK5tGJ8X6RMDNCmnIUnVtdc7Bwjtrg/formResponse",
@@ -276,6 +280,9 @@
           "entry.1042113219": field5,
           "entry.1899619283": field6,
           "entry.565966575": field7
+          "entry.938893231": field8,
+          "entry.1730514484": field9,
+          "entry.40691790": field10
         },
         type: "POST",
         dataType: "xml",
