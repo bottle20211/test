@@ -26,19 +26,19 @@
   font-weight: bolder;
 
 }
- #my-form .input-box{
+ form .input-box{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
   font-size: 20;
 }
-#my-form .input-box span.details{
+form .input-box span.details{
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
   font-size: 20;
   color: green;
 }
-#my-form .input-box input{
+form .input-box input{
   height: 45px;
   width: 100%;
   outline: none;
