@@ -28,7 +28,7 @@
 }
  form .input-box{
   margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
+  width: calc(100% - 20px);
   font-size: 20;
 }
 form .input-box span.details{
