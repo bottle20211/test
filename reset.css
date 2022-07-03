@@ -61,7 +61,7 @@ background: #eee;
 nav li {
 float: left;
 width: 20%;
-border-right: 1px solid #ddd;
+
 }
 
 nav li:last-child {
